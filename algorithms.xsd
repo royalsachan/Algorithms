@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="sorting_algorithms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="algorithm" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="inventor" type="xs:string"/>
+              <xs:element name="year_of_publication" type="xs:string"/>
+              <xs:element name="working_strategy" type="xs:string"/>
+              <xs:element name="time_complexity">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="best" type="xs:string"/>
+                    <xs:element name="average" type="xs:string"/>
+                    <xs:element name="worst" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="space_complexity" type="xs:string"/>
+              <xs:element name="suitable_for" type="xs:string"/>
+              <xs:element name="stability" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
